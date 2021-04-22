@@ -1,14 +1,10 @@
 body {
 
     background-color: #f1e7e7;
-    background-image: url(polka.gif);
-  
-    color: rgb(241, 37, 37);
-  
-    font-family: "Nunito", sans-serif;
-  
-    max-width: 768px;
-  
+    background-image: url(polka.gif);  
+    color: rgb(241, 37, 37);  
+    font-family: "Nunito", sans-serif;  
+    max-width: 768px;  
     margin: 0 auto;
   
   }
@@ -28,8 +24,8 @@ body {
 
 
 #inputDiv{
-    margin: 1% 22%;
-    padding : 2%;
+    margin: 1% 80px;
+    /* padding : 2%; */
 }
 
   h1{
@@ -37,33 +33,46 @@ body {
   }
 
   h3{
-      border: 3px solid rgb(29, 6, 71);;
+      border: solid rgb(165, 27, 27) ;
+  }
+
+  h4{
+    border: 1px solid rgb(67, 187, 63);;
   }
   
   * {
     box-sizing: border-box;
   }
 
+ #newUserBoard{
+     width: 20%;  
+       margin-bottom: 20px;  
+    /*border: 1px solid white; */ 
+     min-height: 30%;
+    display: flex;
+  }  
+
 #bingo {
 
-    background-image: url(bingo.jpg);
-  
-    width: 100%;
-  
-    margin-bottom: 20px;
-  
-    border: 1px solid white;
-  
+    background-image: url(bingo.jpg);  
+    width: 100%;  
+    margin-bottom: 20px;  
+    border: 1px solid white;  
+  }
+
+  .board{
+    /* display: inline-block; */
+    /* width: 20px;   */
+    text-align: center;  
+    margin: 1% 20%;
+    /* min-height: 20px; */
   }
 
   .numbers {
   
-    display: inline-block;
-  
-    width: 64px;
-  
-    text-align: center;
-  
+    display: inline-block;  
+    width: 64px;  
+    text-align: center;  
     min-height: 60px;
   
   }
@@ -76,7 +85,6 @@ body {
         border: 1px green double;
         /* padding: 5px; */
         font-weight: bolder;
-        color: blue;
-      
+        color: blue;     
   
   }
