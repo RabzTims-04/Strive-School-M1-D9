@@ -5,8 +5,7 @@ body {
 } 
 
 .main-board {
-
-  width: 798px;
+  width: 798px;  
 }
 
 .container {
@@ -33,6 +32,9 @@ body {
 
 h1{
     color: red;
+    position: fixed;
+    top: 0px;
+	  text-align: center;
 }
 
 button{
@@ -54,17 +56,6 @@ button{
   border: 1px solid black;
   color: rgb(22, 0, 0);
 }
-
-/* .cell {  
-  display: inline-block; 
-  flex-wrap: wrap; 
-  width: 64px;  
-  min-height: 60px;
-  border: solid rgb(165, 27, 27) ;
-  font-weight: bold;
-  justify-content: center;
-  align-items: center;  
-} */
 
 .highlight{
   background-image: url(polka.gif);
