@@ -8,32 +8,44 @@
     <link rel="stylesheet" type="text/css" href="./bingo.css">
 </head>
 <body>
+    <br>
+    <br>
 
-    <h1>BINGO!!</h1>
+    <div class="container">
+        <h1>!!BINGO!!</h1>
 
-    <div id="bingo">
+        <br>
+        <br>
 
-      <!-- bingo cells will be inserted here -->
+        <div class="main-board board"></div>
+        
+
+        <div id ="inputDiv">
+
+            <button type="button"
+              id ="randButton" 
+              class ="btn"
+              value="Generate A Random Number">
+              Generate A Random Number</button>
+              
+            <input type="text"
+             id="random-value-field" 
+             name="textField"/>
+
+            <input type="number"
+              class ="input-field"
+              value="1"  
+              id="usersNumber">
+
+            <button type="button"
+             id="user-board-button" 
+             class = "btn"
+             value="Create a New User Board">
+             Create a New User Board</button>
+
+        </div>
 
     </div>
-
-    <div  id ="inputDiv">
-        <button type="button" onclick="randomNumber(76)">Generate A Random Number</button>
-        <input type="text" id="random" name="textField" />
-        <button type="button" onclick="userBoard()">Create a New User Board</button>
-
-    </div>
-
-    
-
-    <div id="newUserBoard">
-
-    </div>
-
-    
-
-    <script src="bingo.js">
-
-    </script>
+    <script src="bingo.js"></script>
 </body>
 </html>

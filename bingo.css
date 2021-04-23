@@ -1,90 +1,74 @@
 body {
+  background-image: url(bingo.jpg);
+  background-size: 100% 200%;
+  background-repeat: no-repeat;  
+} 
 
-    background-color: #f1e7e7;
-    background-image: url(polka.gif);  
-    color: rgb(241, 37, 37);  
-    font-family: "Nunito", sans-serif;  
-    max-width: 768px;  
-    margin: 0 auto;
-  
-  }
+.main-board {
 
-  #random{
-      text-align: center;
-      color: red;
-      background-color: rgb(224, 222, 94);
-  }
-
-  button{
-    border-radius: 12px;
-    color: rgb(224, 222, 94);
-    background-color:rgb(216, 25, 25);
-  }
-
-
-
-#inputDiv{
-    margin: 1% 80px;
-    /* padding : 2%; */
+  width: 798px;
 }
 
-  h1{
-      text-align: center;
-  }
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 
-  h3{
-      border: solid rgb(165, 27, 27) ;
-  }
+.board {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;   
+  padding-left: 1%;
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
 
-  h4{
-    border: 1px solid rgb(67, 187, 63);;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
+.user-board{
+  width: 504px;
+  margin-bottom: 24px;      
+}
 
- #newUserBoard{
-     width: 20%;  
-       margin-bottom: 20px;  
-    /*border: 1px solid white; */ 
-     min-height: 30%;
-    display: flex;
-  }  
+h1{
+    color: red;
+}
 
-#bingo {
+button{
+  border-radius: 12px;
+  color: rgb(224, 222, 94);
+  background-color:rgb(216, 25, 25);
+}
 
-    background-image: url(bingo.jpg);  
-    width: 100%;  
-    margin-bottom: 20px;  
-    border: 1px solid white;  
-  }
+.cell {
+  background-repeat: no-repeat;  
+  background-color: rgb(255, 255, 255);
+  width: 40px;
+  height: 80px;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  color: rgb(22, 0, 0);
+}
 
-  .board{
-    /* display: inline-block; */
-    /* width: 20px;   */
-    text-align: center;  
-    margin: 1% 20%;
-    /* min-height: 20px; */
-  }
+/* .cell {  
+  display: inline-block; 
+  flex-wrap: wrap; 
+  width: 64px;  
+  min-height: 60px;
+  border: solid rgb(165, 27, 27) ;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;  
+} */
 
-  .numbers {
-  
-    display: inline-block;  
-    width: 64px;  
-    text-align: center;  
-    min-height: 60px;
-  
-  }
-
-  .selected {
-  
-    /* border: 1px solid white; */
-   
-        background-color: red;
-        border: 1px green double;
-        /* padding: 5px; */
-        font-weight: bolder;
-        color: blue;     
-  
-  }
+.highlight{
+  background-image: url(polka.gif);
+  background-size: 100% 100%; background-color: rgb(243, 129, 129);
+  color: white;
+  font-weight: bold;
+}
